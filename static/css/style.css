@@ -4,7 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -8452,11 +8452,11 @@ h1, h2, h3, h4, h5,
   .zero-text {
       max-width: 100%;
       text-align: center;
+      margin-left: 0px;
   }
 
   .zero-image {
-      margin-top: 1rem;
-      max-width: 100%;
+      display: none;
   }
 }
 ----
@@ -9781,3 +9781,48 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+/* changes made */
+
+@media (max-width: 768px) {
+  #about-section{
+    padding-top: inherit;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-fluid {
+    max-width: 50%; 
+    height: auto;   
+    display: block; 
+    margin: 0 auto;
+  }
+}  
+
+@media (max-width: 768px) {
+  .zero {
+      flex-direction: column;
+      margin-left:  0;
+}
+}
+
+@media (max-width: 768px) {
+  .logo {
+      margin-top: 10px;
+      width: 80px !important;
+      height: 63px !important;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .ftco-navbar-light .navbar-toggler{
+    color: #fff !important;
+  }
+
+  .ftco-navbar-light.scrolled .navbar-toggler{
+    color: #fff !important;
+  }
+} 
